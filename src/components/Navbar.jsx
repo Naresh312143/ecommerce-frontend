@@ -22,7 +22,7 @@ function Navbar() {
     <nav className="bg-white border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
-          href="/"
+          to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
@@ -74,7 +74,7 @@ function Navbar() {
             {isLoggedIn && (
               <li>
                 <Link
-                  href="/product/add"
+                  to="/product/add"
                   className="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0"
                 >
                   Add Products
@@ -84,7 +84,7 @@ function Navbar() {
             {!isLoggedIn && (
               <li>
                 <Link
-                  href="/login"
+                  to="/login"
                   className="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0"
                 >
                   Login/Register
@@ -94,7 +94,7 @@ function Navbar() {
             {isLoggedIn && (
               <li className="relative">
                 <Link
-                  href="/cart"
+                  to="/cart"
                   className="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0"
                 >
                   <ShoppingCart className="h-5 w-5" />
